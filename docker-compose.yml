@@ -1,0 +1,17 @@
+version: '3'
+services:
+  nginx:
+    build: .
+    ports:
+      - "80:80"
+    volumes:
+      - nginx_data:/usr/share/nginx/html   # Mount a named volume for persistent data
+      - nginx_config:/etc/nginx            # Mount a named volume for NGINX configuration
+      # Uncomment and modify the following lines if you have custom files on the host
+      # - ./nginx.conf:/etc/nginx/nginx.conf  # Optional: Mount a custom NGINX config file
+      # - ./html:/usr/share/nginx/html        # Optional: Mount a directory with static files
+
+volumes:
+  nginx_data:
+  nginx_config:
+

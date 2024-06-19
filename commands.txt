@@ -1,0 +1,12 @@
+Summary of Key Commands
+docker-compose build - Build images.
+docker-compose up - Start services.
+docker-compose up -d - Start services in detached mode.
+docker-compose down - Stop and remove services.
+docker-compose up --build - Rebuild and restart services.
+docker-compose ps - List running containers.
+docker-compose logs - View logs.
+docker-compose logs <service_name> - View logs of a specific service.
+docker-compose exec <service_name> <command> - Execute commands in a running container.
+docker-compose up --scale <service_name>=<number_of_instances> - Scale services.
+docker system prune - Clean up unused Docker data.
